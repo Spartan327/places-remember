@@ -25,9 +25,7 @@ SECRET_KEY = '+^-wxcsi&0z+i&cdocd1brrof!1iz3)7a$adn+34=-aob-+45='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0',
-                 'localhost'
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,8 +77,12 @@ WSGI_APPLICATION = 'placesremember.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mnqwfzlh',
+        'USER': 'mnqwfzlh',
+        'PASSWORD': 'Dvthtq9BU6RjsvfO-R7m9PVSnxxQWvSk',
+        'HOST': 'hattie.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
 
