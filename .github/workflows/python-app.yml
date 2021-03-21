@@ -29,6 +29,7 @@ jobs:
       run: |
         poetry config virtualenvs.in-project true
         poetry install
+        poetry add flake8
         
     - name: Lint with flake8
       run: |
